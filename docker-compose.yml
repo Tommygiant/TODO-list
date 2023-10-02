@@ -1,0 +1,35 @@
+version: "3"
+services:
+  mysql:
+    image: mysql:8.0.34
+    container_name: mysql
+    # ports:
+    #   - "13306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: '123456'
+      MYSQL_ROOT_HOST: '%'
+      MYSQL_DATABASE: todolist
+    volumes:
+      - ./sql:/docker-entrypoint-initdb.d
+      
+  backend:
+    image: todo-backend:latest
+    container_name: backend
+    build:
+      context: ./todolist/springboot-backend
+      dockerfile: Dockerfile
+    # ports:
+    #   - "18080:8080"
+    depends_on:
+      - mysql
+
+  front:
+    image: todo-front:latest
+    container_name: front
+    build:
+      context: ./todolist/react-front
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
