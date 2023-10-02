@@ -56,7 +56,8 @@ A simple Java Spring Boot application, MySQL runs as a container, using ReactJS 
 
 ### When you open this framework project using `IDEA` you will see the following structure.
 
-![react-front](https://github.com/Tommygiant/TODO-list/assets/78850099/0bbc11b2-6149-4bcd-a089-0b2de16680a1)
+![react-front](https://github.com/Tommygiant/TODO-list/assets/78850099/c0f51e8f-793e-4f97-a729-06b81d21a2ab)
+
 
 
 `src/App.js: ` It includes all front-end operations and page render for 4 major components
@@ -71,8 +72,7 @@ A simple Java Spring Boot application, MySQL runs as a container, using ReactJS 
 
 `src/index.js: ` Entry of front-end 
 
-![springboot-backend](https://github.com/Tommygiant/TODO-list/assets/78850099/0a17229b-6050-4911-b3f8-e62022bdbde5)
-
+![springboot-backend](https://github.com/Tommygiant/TODO-list/assets/78850099/73d6e536-941d-46b8-b40b-830e333e0bee)
 
 
 
@@ -115,3 +115,7 @@ A simple Java Spring Boot application, MySQL runs as a container, using ReactJS 
 - Build application and package it to VM
 - Create Dockerfile and edit compose file
 - Version Testing
+
+### v0.4 (2023/10/02 18:00 +00:00)
+- Overwrite Dockerfile for front-end and back-end
+- Fix DB initial problem in docker
