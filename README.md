@@ -10,6 +10,7 @@ A simple Java Spring Boot application, MySQL runs as a container, using ReactJS 
    * Database Information
    * TODO List
    * Docker Container
+   * Video Tour
 * Description of the catalogue structure
 * Change Log
 
@@ -48,6 +49,11 @@ A simple Java Spring Boot application, MySQL runs as a container, using ReactJS 
 - Create Docker file to build a Docker image, the image contains mysql 8.0 and nginx
 - Edit compose file to solve port mapping destination and nginx file calling privilege
 - Build application and start it on VM
+
+## Video Tour
+
+
+https://github.com/Tommygiant/TODO-list/assets/78850099/076bfef1-e9c3-4337-aa3f-11b474660aff
 
 
 
